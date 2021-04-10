@@ -11,6 +11,7 @@ async function getToken() {
 }
 
 function handleUserResponse({user}) {
+  console.log({user})
   window.localStorage.setItem(localStorageKey, user.token)
   return user
 }
